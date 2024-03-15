@@ -1,3 +1,0 @@
-class CounterAIncrementState {}
-
-class CounterBIncrementState {}
