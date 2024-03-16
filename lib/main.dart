@@ -28,7 +28,7 @@ class HomePage extends StatelessWidget {
     return BlocConsumer<CounterCubit, CounterState>(builder: (context, state) {
       return Scaffold(
         appBar: AppBar(
-          title:  Text('points counter'),
+          title: const Text('points counter'),
           backgroundColor: Colors.orange,
         ),
         body: Column(
