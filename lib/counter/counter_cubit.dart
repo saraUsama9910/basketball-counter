@@ -1,12 +1,12 @@
-import 'package:basketball/counter/mycounter_state.dart';
+import 'package:basketball/counter/counter_state.dart';
 import 'package:bloc/bloc.dart';
 
 class CounterCubit extends Cubit<CounterState> {
-  CounterCubit() : super(CounterBIncrementState());
+  CounterCubit() : super(CounterAIncrementState());
   int pointATeam = 0;
   int pointBTeam = 0;
 
-  void TeamIncrement(String team, int buttonNumber) {
+  void TeamIncrement({required String team, required int buttonNumber}) {
     if (team == 'A') {
       pointATeam += buttonNumber;
       emit(CounterAIncrementState());
